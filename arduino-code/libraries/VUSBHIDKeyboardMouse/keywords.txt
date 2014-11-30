@@ -1,0 +1,3 @@
+VUSBHIDKeyboardMouse	KEYWORD3
+UsbKeyboard		KEYWORD3
+UsbMouse		KEYWORD3

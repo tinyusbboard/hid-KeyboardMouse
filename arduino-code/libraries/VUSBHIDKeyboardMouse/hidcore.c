@@ -1,0 +1,1 @@
+../../../gcc-code/lib/hidcore.c
