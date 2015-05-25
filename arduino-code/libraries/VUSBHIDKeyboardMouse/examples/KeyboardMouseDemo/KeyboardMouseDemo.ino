@@ -15,7 +15,7 @@
 #define TIMECTRLTUNE	350
 
 
-prog_uchar message[] PROGMEM  = {
+const unsigned char message[] PROGMEM  = {
 "tinyUSBboard\n"
 "http://matrixstorm.com/avr/tinyusbboard/\n"
 "\n"
