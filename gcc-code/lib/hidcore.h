@@ -126,8 +126,8 @@ struct __keyboard_report_t {
 typedef struct __mouse_report_t mouse_report_t;
 
 #define mouse_report_buttonbit_left		0
-#define mouse_report_buttonbit_middle		1
-#define mouse_report_buttonbit_right		2
+#define mouse_report_buttonbit_right		1
+#define mouse_report_buttonbit_middle		2
 
 #define mouse_report_displacement_X		0
 #define mouse_report_displacement_Y		1
