@@ -157,7 +157,15 @@ PROGMEM const char usbDescriptorConfiguration[] = {    /* USB configuration desc
     USBDESCR_CONFIG,    /* descriptor type */
     USB_CFG_DESCR_PROPS_CONFIGURATION, 0,
                 /* total length of data returned (including inlined descriptors) */
+#if (defined(USB_CFG_HID_NOKEYBOARD) || defined(USB_CFG_HID_NOMOUSE))
+#if (defined(USB_CFG_HID_NOKEYBOARD) && defined(USB_CFG_HID_NOMOUSE))
+    0,          /* no interface */
+#else
+    1,          /* just a mouse or keyboard interface */
+#endif
+#else
     2,          /* number of interfaces in this configuration */
+#endif
     1,          /* index of this configuration */
     0,          /* configuration name string index */
 #if USB_CFG_IS_SELF_POWERED
