@@ -447,8 +447,8 @@ section at the end of this file).
 #define USB_CFG_DESCR_PROPS_STRING_PRODUCT				0
 #define USB_CFG_DESCR_PROPS_STRING_SERIAL_NUMBER			0
 
-#define USB_CFG_DESCR_PROPS_HID						0
-#define USB_CFG_DESCR_PROPS_HID_REPORT					0
+#define USB_CFG_DESCR_PROPS_HID						USB_PROP_IS_DYNAMIC
+#define USB_CFG_DESCR_PROPS_HID_REPORT					USB_PROP_IS_DYNAMIC
 
 #define USB_CFG_DESCR_PROPS_UNKNOWN					0xffff /* for usbFunctionDescriptor */
 

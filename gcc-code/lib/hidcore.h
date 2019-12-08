@@ -82,11 +82,15 @@
 #endif
 
 #if (USB_CFG_DESCR_PROPS_HID!=0)
+#   if (USB_CFG_DESCR_PROPS_HID!=USB_PROP_IS_DYNAMIC)
 #	error USB_CFG_DESCR_PROPS_HID is ignored when implementing dual HID
+#   endif
 #endif
 
 #if (USB_CFG_DESCR_PROPS_HID!=0)
+#   if (USB_CFG_DESCR_PROPS_HID!=USB_PROP_IS_DYNAMIC)
 #	error USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH is ignored when implementing dual HID
+#   endif
 #endif
 
 #ifdef USB_CFG_HID_REPORT_DESCRIPTOR_LENGTH
